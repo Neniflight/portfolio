@@ -1,0 +1,64 @@
+.hexagon {
+  position: absolute;
+  top: 10%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  height: 750px;
+  width: 675px;
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: rotate360 20s linear infinite
+}
+
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.primary_but {
+  position: absolute;
+  width: 200px; 
+  height: 100px; 
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 525;
+}
+
+.top {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top_right {
+  top: 25%;
+  right: 30%;
+}
+
+.bottom_right {
+  bottom: 25%;
+  right: 30%;
+}
+
+.bottom_left {
+  bottom: 25%;
+  left: 30%;
+}
+
+.top_left {
+  top: 25%;
+  left: 30%;
+}
+
+.bottom {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%); 
+}
